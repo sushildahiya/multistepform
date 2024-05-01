@@ -16,15 +16,15 @@ const stepRef = useRef()
             selected:true,
             completed:true,
           }
-          count++
-        }
+          count++ 
+          }
       //step completed
         else if (count<stepNumber){
           newSteps[count]={
             ...newSteps[count],
             highlighted:false,
-            selected:false,
-            completed:false,
+            selected:true,
+            completed:true,
           }
           count++
         }
